@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service Now BasicFilter" verbose="1" parallel="tests" data-provider-thread-count="100" thread-count="100" preserve-order="true">
+
+	<listeners>
+		<!-- <listener class-name="com.ciphercloud.qa.listener.CaptureScreenShot" /> -->
+<!-- 		<listener class-name="com.ciphercloud.qa.listener.ReportServerListener" />
+ --><!-- <listener class-name="com.ciphercloud.qa.listener.GenerateFailedReports" /> -->
+	</listeners>
+	
+
+	
+	<test name="fujji_filterchange" preserve-order="true" enabled="true" thread-count="100">
+	
+		
+		
+		
+		<classes>
+			<class name="adobe.adobeTesting.AdhocTest">
+		<methods>
+		<include name="verifyRecords"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+</suite>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service Now tests for file upload" verbose="1" data-provider-thread-count="100" thread-count="100" preserve-order="true" >
+	<listeners>
+<!-- 		<listener class-name="com.ciphercloud.qa.listener.CaptureScreenShot" />
+ -->		<listener class-name="com.ciphercloud.qa.listener.ReportServerListener" />
+ <!-- <listener class-name="com.ciphercloud.qa.listener.GenerateFailedReports" /> -->
+
+	</listeners>
+	
+	<suite-files >
+	   
+		<suite-file path="./Snow9302015/SnowResource/suites/Geneva/Master.xml"/>
+	
+  		
+  </suite-files>
+
+</suite>

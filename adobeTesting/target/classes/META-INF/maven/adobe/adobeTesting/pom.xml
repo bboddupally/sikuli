@@ -11,10 +11,10 @@
   <name>adobeTesting</name>
   <url>http://maven.apache.org</url>
 
+
 <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 
 	<build>
 	<resources>
@@ -44,6 +44,7 @@
           <configuration>
           <source>1.8</source>
           <target>1.8</target>
+         <!--  <encoding>UTF-16</encoding> -->
         </configuration>
         </plugin>
 

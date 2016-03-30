@@ -38,7 +38,7 @@ public class RemoteDriver implements IBrowserProvider{
 	public void setThreadDriver(){
 		threadDriver.set(driver);
 	}
-	@Override
+	
     public WebDriver getNewDriver(IDriverProvider driverProvider) {
             // TODO Auto-generated method stub
             driver=driverProvider.getNewBrowser();

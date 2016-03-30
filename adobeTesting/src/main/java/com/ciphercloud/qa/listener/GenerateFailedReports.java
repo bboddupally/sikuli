@@ -46,7 +46,7 @@ public class GenerateFailedReports extends TestListenerAdapter implements IRepor
     m_xmlSuite = xmlSuite;
   }
 
-  @Override
+  
   public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
     for(int i= 0; i < suites.size(); i++) {
       generateFailureSuite(suites.get(i).getXmlSuite(), suites.get(i), outputDirectory);
@@ -89,7 +89,7 @@ public class GenerateFailedReports extends TestListenerAdapter implements IRepor
    * @deprecated this class is used now as IReporter
    */
   @Deprecated
-  @Override
+  
   public void onFinish(ITestContext context) {
     // Delete the previous file
 //    File f = new File(context.getOutputDirectory(), getFileName(context));

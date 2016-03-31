@@ -1,4 +1,4 @@
-package adobe.adobeTesting;
+package com.ciphercloud.qa.util;
 
 import java.io.Closeable;
 import java.io.IOException;

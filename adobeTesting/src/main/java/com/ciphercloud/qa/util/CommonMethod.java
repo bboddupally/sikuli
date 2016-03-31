@@ -20,7 +20,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import java.util.StringTokenizer;
-import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -36,12 +35,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 import com.ciphercloud.qa.dataprovider.Config;
 import com.ciphercloud.qa.listener.CaptureScreenShot;
 import com.thoughtworks.selenium.SeleniumException;
 
-import junit.framework.Assert;
 
 
 

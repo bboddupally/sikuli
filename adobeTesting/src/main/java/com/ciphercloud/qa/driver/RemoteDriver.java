@@ -2,7 +2,6 @@ package com.ciphercloud.qa.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
 
 //import com.ciphercloud.qa.listener.EventListener;
 
@@ -38,7 +37,7 @@ public class RemoteDriver implements IBrowserProvider{
 	public void setThreadDriver(){
 		threadDriver.set(driver);
 	}
-	
+	@Override
     public WebDriver getNewDriver(IDriverProvider driverProvider) {
             // TODO Auto-generated method stub
             driver=driverProvider.getNewBrowser();

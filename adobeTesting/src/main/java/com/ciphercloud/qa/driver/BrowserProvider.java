@@ -210,6 +210,7 @@ public class BrowserProvider implements IDriverProvider{
 		return nameBrowser;
 	}
 
+	@Override
 	public WebDriver getNewBrowser(String browser) {
 		// TODO Auto-generated method stub
 		return null;

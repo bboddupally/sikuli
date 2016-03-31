@@ -86,7 +86,7 @@ public class DriverFactory implements IDriverProvider{
 		return nameBrowser;
 	}
 
-	
+	@Override
     public WebDriver getNewBrowser() {
             // TODO Auto-generated method stub
             IBrowserProvider driverFact=getDriverFactory();
@@ -94,7 +94,7 @@ public class DriverFactory implements IDriverProvider{
             driver=driverFact.getNewDriver(browser);
             return driver;
     }
-	
+	@Override
     public WebDriver getNewBrowser(String browser) {
             // TODO Auto-generated method stub
             IBrowserProvider driverFact=getDriverFactory();

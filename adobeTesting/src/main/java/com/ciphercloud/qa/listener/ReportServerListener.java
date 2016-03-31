@@ -87,21 +87,21 @@ public class ReportServerListener implements ITestListener {
 
 	}
 
-	
+	@Override
 	public void onTestFailure(ITestResult testResult) {
 		// TODO Auto-generated method stub
 		System.out.println("came to report server listener failed.....");
 		recordResultsIntoReportServer(testResult);
 	}
 
-	
+	@Override
 	public void onTestSkipped(ITestResult testResult) {
 
 		recordResultsIntoReportServer(testResult);
 
 	}
 
-	
+	@Override
 	public void onTestSuccess(ITestResult testResult) {
 		// TODO Auto-generated method stub
 		System.out.println("came into reportserver test passed...............");
@@ -147,7 +147,7 @@ public class ReportServerListener implements ITestListener {
 
 	}
 
-	
+	@Override
 	public void onFinish(ITestContext arg0) {
 
 		try {
@@ -158,20 +158,20 @@ public class ReportServerListener implements ITestListener {
 		}
 	}
 public String testName=null;
-	
+	@Override
 	public void onStart(ITestContext arg0) {
 		testName=arg0.getName();
 		System.out.println(arg0.getName());
 		
 	}
 
-	
+	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	
+	@Override
 	public void onTestStart(ITestResult testResult) {
 	
 		if (isStartRecorded) {

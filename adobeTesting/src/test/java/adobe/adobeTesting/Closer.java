@@ -11,7 +11,7 @@ public class Closer implements Closeable {
 	    return t;
 	  }
 
-	   public void close() throws IOException {
+	  @Override public void close() throws IOException {
 	    if (closeable != null) {
 	      closeable.close();
 	    }

@@ -11,12 +11,12 @@ import org.testng.TestListenerAdapter;
 
 public class LogListener extends TestListenerAdapter {
 
-	
+	@Override
 	public void onTestStart(ITestResult tr) {
 		log("Test Started....");
 	}
 
-	
+	@Override
 	public void onTestSuccess(ITestResult tr) {
 
 		log("Test '" + tr.getName() + "' PASSED");
@@ -28,7 +28,7 @@ public class LogListener extends TestListenerAdapter {
 		System.out.println(".....");
 	}
 
-	
+	@Override
 	public void onTestFailure(ITestResult tr) {
 
 		log("Test '" + tr.getName() + "' FAILED");
@@ -36,7 +36,7 @@ public class LogListener extends TestListenerAdapter {
 		System.out.println(".....");
 	}
 
-	
+	@Override
 	public void onTestSkipped(ITestResult tr) {
 		log("Test '" + tr.getName() + "' SKIPPED");
 		System.out.println(".....");

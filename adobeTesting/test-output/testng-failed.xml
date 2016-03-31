@@ -3,16 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="adobe.adobeTesting.AdhocTest"/>
+      <class name="adobe.adobeTesting.ReportBuilderTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="adobe.adobeTesting.AdhocTest">
-        <methods>
-          <include name="verifyRecords"/>
-        </methods>
-      </class> <!-- adobe.adobeTesting.AdhocTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

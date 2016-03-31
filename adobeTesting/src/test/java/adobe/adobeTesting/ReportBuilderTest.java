@@ -17,13 +17,10 @@ public class ReportBuilderTest {
 	 AdhocUtil adUtil = new AdhocUtil();
 @Test
 public void verifyRecords() throws AWTException, InterruptedException, FindFailed, UnsupportedFlavorException, IOException, ClassNotFoundException{
-	ImagePath.setBundlePath(System.getProperty("user.dir")+"/ImgReportBuilder");
-       
-   	
+	ImagePath.setBundlePath(System.getProperty("user.dir")+"/AdobeResource/ImgReportBuilder");
    	adUtil.clickOnImage(adhocScreen,"create.png");
    	adUtil.waitclickOnImage(adhocScreen,"next.png");
    	adUtil.clickOnImage(adhocScreen,"finish.png");
-	//adUtil.clickOnImage(adhocScreen,"select.png");
    	Thread.sleep(100);
 	adUtil.clickOnImage(adhocScreen,"insert.png");
 	adhocScreen.type("a",Key.CTRL);
@@ -33,10 +30,9 @@ public void verifyRecords() throws AWTException, InterruptedException, FindFaile
 		adUtil.clickOnImage(adhocScreen,"select3.png");
 	} catch (Exception e) {
 	}
+
 	
-	//adUtil.clickOnImage(adhocScreen,"select2.png");
-	//adhocScreen.waitVanish("refreshing report.png");
-	for (int i = 0; i < 30; i++) {
+	for (int i = 0; i < 60; i++) {
 		Thread.sleep(1000);
 		if(adhocScreen.exists("refreshing report.png") != null){
 			Thread.sleep(1000);

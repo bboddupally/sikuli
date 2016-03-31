@@ -23,7 +23,7 @@ public class AdhocTest {
 public void verifyRecords() throws AWTException, InterruptedException, FindFailed, UnsupportedFlavorException, IOException, ClassNotFoundException{
 	  
        
-   	ImagePath.setBundlePath(System.getProperty("user.dir")+"/imgsAdhoc");
+   	ImagePath.setBundlePath(System.getProperty("user.dir")+"/AdobeResource/imgsAdhoc");
    	adUtil.clickOnImage(adhocScreen,"Reports.png");
    	adUtil.clickOnImage(adhocScreen,"customic traffic.png");
    	adUtil.clickOnImage(adhocScreen,"custom traffic 1-10.png");
@@ -32,7 +32,7 @@ public void verifyRecords() throws AWTException, InterruptedException, FindFaile
    	
    	copytoClipboard();
    	
-  // 	adUtil.copyToclpbrd(); 
+ 
    	Thread.sleep(200);
    	adUtil.pasteFromClpbrd();
     Thread.sleep(600);

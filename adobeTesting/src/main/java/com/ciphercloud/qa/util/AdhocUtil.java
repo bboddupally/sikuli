@@ -154,7 +154,7 @@ public class AdhocUtil {
 			ArrayList<String> notencrypted = new ArrayList<String>();
 			for (int i = 0; i < count; ++i) {
 				String x = tokenizer.nextToken();
-				System.out.println(EncryptionChecks.verifyEncryptedText(x));
+				//System.out.println(EncryptionChecks.verifyEncryptedText(x));
 				
 				if(!EncryptionChecks.verifyEncryptedText(x)){
 					notencrypted.add(x);
@@ -228,8 +228,8 @@ public class AdhocUtil {
 	
 
 	    public  void testing() {
-	        //String message = "Ð•Ð·Ð¸ÐºÐ¾Ð²Ð°";
-	        String message = "LiuYan åˆ˜ç ”";
+	        //String message = "Ã�â€¢Ã�Â·Ã�Â¸Ã�ÂºÃ�Â¾Ã�Â²Ã�Â°";
+	        String message = "LiuYan Ã¥Ë†ËœÃ§ â€�";
 	        System.out.println("Original Message : " + message);
 	        StringSelection ss = new StringSelection(message);
 	        Clipboard cb = Toolkit.getDefaultToolkit().getSystemClipboard();

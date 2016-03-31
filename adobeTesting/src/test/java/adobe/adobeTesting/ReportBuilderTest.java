@@ -40,6 +40,8 @@ public void verifyRecords() throws AWTException, InterruptedException, FindFaile
 			break;
 		}
 	}
+	Thread.sleep(10000);
+	
 	adUtil.clickOnImage(adhocScreen,"selectA.png");
 
 	 

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.252 sec <<< FAILURE! - in TestSuite
-verifyRecords(adobe.adobeTesting.AdhocTest)  Time elapsed: 10.834 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.267 sec <<< FAILURE! - in TestSuite
+verifyRecords(adobe.adobeTesting.AdhocTest)  Time elapsed: 10.073 sec  <<< FAILURE!
 java.lang.AssertionError: please find the values that are not encrypted file location: E:\snow2\adobeTesting/AdobeResource/temp/tmp2.txt expected [true] but found [false]
 	at adobe.adobeTesting.AdhocTest.verifyRecords(AdhocTest.java:35)
 

@@ -40,6 +40,20 @@ public class AdhocUtil {
 	 */
 	public  void clickOnImage(Screen adhocScreen,String picPath) throws InterruptedException, FindFailed {
 		try {
+			click(adhocScreen, picPath);
+		} catch (Exception e) {
+			click(adhocScreen,System.getProperty("user.dir")+"/AdobeResource/imgsAdhoc/imgsAdhoc/"+picPath);
+		}
+	}
+
+	/**
+	 * @param adhocScreen
+	 * @param picPath
+	 * @throws InterruptedException
+	 * @throws FindFailed
+	 */
+	private void click(Screen adhocScreen, String picPath) throws InterruptedException, FindFailed {
+		try {
 			adhocScreen.click(picPath);
 			Thread.sleep(200);
 		} catch (Exception e) {

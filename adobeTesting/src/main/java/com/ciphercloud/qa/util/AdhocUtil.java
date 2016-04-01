@@ -137,18 +137,7 @@ public class AdhocUtil {
 			byte[] data = Files.readAllBytes(path);
 			new String(data);
 			//System.out.println(s);
-			BufferedReader in = new BufferedReader(new FileReader(new File(System.getProperty("user.dir")+"/AdobeResource/temp/tmp.txt")));
-			//System.out.println(readText(new File(System.getProperty("user.dir")+"/AdobeResource/temp/tmp.txt")));
-		/*	while((line = readText(new File(System.getProperty("user.dir")+"/AdobeResource/temp/tmp.txt"))) != null)
-			{
-				//EncryptionChecks.verifyEncryptedText(line);
-				System.out.println("======================");
-				System.out.println(EncryptionChecks.verifyEncryptedText(line));
-			    System.out.println("======================");
-				System.out.println(line);
-
-			}*/
-			in.close();
+		
 			StringTokenizer tokenizer = new StringTokenizer(readText(new File(System.getProperty("user.dir")+"/AdobeResource/temp/tmp.txt")),"\n");
 			int count = tokenizer.countTokens();
 			ArrayList<String> notencrypted = new ArrayList<String>();

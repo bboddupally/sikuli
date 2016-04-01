@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Adobe test full Master" verbose="1"  preserve-order="true">
+	<listeners>
+<!-- 		<listener class-name="com.ciphercloud.qa.listener.CaptureScreenShot" />
+ -->		<listener class-name="com.ciphercloud.qa.listener.CaptureScreenShot" />
+ <!-- <listener class-name="com.ciphercloud.qa.listener.GenerateFailedReports" /> -->
+
+	</listeners>
+
+
+<test name="Fujji_UserCRUD" preserve-order="true" enabled="true" thread-count="100">
+		
+		
+		<classes>
+			<class name="adobe.adobeTesting.AdhocTest"/>
+				
+		</classes>
+	</test>
+
+
+</suite>

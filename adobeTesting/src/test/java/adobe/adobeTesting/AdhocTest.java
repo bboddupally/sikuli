@@ -32,7 +32,7 @@ public void verifyRecords() throws AWTException, InterruptedException, FindFaile
    	adUtil.clickOnImage(adhocScreen,"Custom_insight1.png");
    	adUtil.clickOnImage(adhocScreen,"Total.png");
    	copytoClipboard();
-    adUtil.clickOnImage(adhocScreen,"closeButton.png",87,-2);
+    adUtil.clickOnImage(adhocScreen,"closeButton.png",84,-4);
    	Thread.sleep(200);
    	adUtil.pasteFromClpbrd();
     Thread.sleep(600);

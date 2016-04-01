@@ -31,12 +31,12 @@ public void verifyRecords() throws AWTException, InterruptedException, FindFaile
    	adUtil.clickOnImage(adhocScreen,"Total.png");
    	
    	copytoClipboard();
-   	
+    adUtil.clickOnImage(adhocScreen,"closeButton.png",87,-2);
  
    	Thread.sleep(200);
    	adUtil.pasteFromClpbrd();
     Thread.sleep(600);
-    adUtil.clickOnImage(adhocScreen,"closeButton.png",87,-2);
+   
 }
 /**
  * 

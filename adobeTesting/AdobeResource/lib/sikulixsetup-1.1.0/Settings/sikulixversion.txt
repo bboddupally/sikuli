@@ -1,0 +1,11 @@
+sikulixvmaj=1
+sikulixvmin=1
+sikulixvsub=0
+sikulixbeta=0
+sikulixbuild=2015-10-06_17:22
+sikulixdev=release
+sikulixvused=1.1.0
+sikulixvproject=1.1.0
+sikulixvjython=2.7.0
+sikulixvjruby=1.7.22
+sikulixlocalrepo=/Users/raimundhocke/.m2/repository

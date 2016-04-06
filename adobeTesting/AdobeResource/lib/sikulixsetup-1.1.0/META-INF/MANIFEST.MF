@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: raimundhocke
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_60
+Main-Class: org.sikuli.setup.RunSetup
+

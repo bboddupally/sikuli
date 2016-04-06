@@ -96,6 +96,9 @@
 	<version>2.48.2</version>
 </dependency>
 
+
+
+
 		 
     <dependency>
 			<artifactId>sikulix</artifactId>
@@ -254,10 +257,27 @@
 			<version>1.1.5</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+    <groupId>sikulix</groupId>
+    <artifactId>sikulix</artifactId>
+    <version>1.1</version>
+    <scope>test</scope>
+</dependency>
+		
+		
+		
 		</dependencies>
 		
 		
+	<repositories>
+	<repository>
+    <id>project-common</id>
+    <name>Project Common</name>
+    <url>https://github.com/bboddupally/sikuli/blob/master/AdobeResource/lib/sikulix-1.1.jar</url>
+</repository>
 	
+	</repositories>
 		
 		
 	
